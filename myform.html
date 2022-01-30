@@ -6,12 +6,18 @@
     <title>貓熊問卷調查</title>
 </head>
 <body>
-    <form action="" method=""> <!--method預設是get-->
+    <form action="" method="GET"> <!--method預設是get-->
         <label for="myname">姓名：</label><!--label for對上input id可以讓使用者點選時label時自動選取input裡的資料-->
-        <input id="myname" type="text" name="InputName" />
-        <label for="tele">電話</label>
+        <input id="myname" type="text" name="InputName" value="Andy"/>
+        <br>
+        <label for="tele">電話：</label>
         <input id="tele" type="text" name="InputTele">
-        <button type="submit">提交表單</button>
+        <br>
+        <input type="checkbox" id="checkbox" name="news" checked>
+        <label for="checkbox">訂閱電子報</label>
+        <br>
+        <button type="submit">提交表單</button><!--需要放在form標籤裡面-->
     </form>
+
 </body>
 </html>
