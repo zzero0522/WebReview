@@ -1,23 +1,80 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>貓熊問卷調查</title>
-</head>
-<body>
-    <form action="" method="GET"> <!--method預設是get-->
-        <label for="myname">姓名：</label><!--label for對上input id可以讓使用者點選時label時自動選取input裡的資料-->
-        <input id="myname" type="text" name="InputName" value="Andy"/>
-        <br>
-        <label for="tele">電話：</label>
-        <input id="tele" type="text" name="InputTele">
-        <br>
-        <input type="checkbox" id="checkbox" name="news" checked>
-        <label for="checkbox">訂閱電子報</label>
-        <br>
-        <button type="submit">提交表單</button><!--需要放在form標籤裡面-->
-    </form>
+  </head>
+  <body>
+    <form action="" method="GET">
+      <!--method預設是get-->
+      <label for="myname">姓名：</label>
+      <!--label for對上input id可以讓使用者點選時label時自動選取input裡的資料-->
+      <input
+        id="myname"
+        type="text"
+        name="InputName"
+        placeholder="請輸入真實姓名"
+        required
+      />
+      <br />
+      <label for="gender">性別</label>
+      <select name="gender" id="gender" required>
+        <option></option>
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+        <option value="other">其他</option>
+      </select>
+      <br />
+      <label for="tele">電話：</label>
+      <input id="tele" type="text" name="InputTele" />
+      <br />
+      <label for="email">信箱：</label>
+      <input id="email" type="email" name="InputEmail" required />
+      <br />
 
-</body>
+      <label for="age">年齡：</label>
+      <input
+        id="age"
+        type="number"
+        name="InputAge"
+        min="0"
+        max="150"
+        required
+      />
+      <br />
+      <!--datalist練習-->
+      <label for="area">地區：</label>
+      <input list="areaList" id="area" type="text" name="area" />
+      <datalist id="areaList">
+        <option value="基隆市">基隆</option>
+        <option value="新北市">新北</option>
+        <option value="台北市">台北</option>
+        <option value="新竹市">新竹</option>
+      </datalist>
+      <br />
+      <!--textarea練習-->
+      <label for="suggestion">給網站的建議：</label>
+      <br />
+      <textarea
+        name="suggestion"
+        id="suggestion"
+        cols="30"
+        rows="10"
+        placeholder="感謝您提供建議！"
+      ></textarea>
+
+      <br />
+      <input type="checkbox" id="checkbox" name="news" checked />
+      <label for="checkbox">訂閱電子報</label>
+      <br />
+      0<input type="range" min="0" max="100" step="10" name="" id="" />100
+      <br />
+      <label for="password">密碼：</label>
+      <input type="password" name="" minlength="8" maxlength="12" />
+      <br />
+      <button type="submit">提交表單</button>
+      <!--需要放在form標籤裡面-->
+    </form>
+  </body>
 </html>
