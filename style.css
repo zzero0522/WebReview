@@ -1,13 +1,83 @@
-/*顏色設定*/
-h1 {
+/* universal selector */
+/*
+* {
   color: green;
 }
-p {
-  color: rgb(0, 0, 0);
+*/
+*::selection {
+  background-color: greenyellow;
 }
+/*element selector*/
+/*
+h1 {
+  color: rgb(74, 255, 150);
+}
+*/
+/*id selector 前面放#*/
+/*
+#redText {
+  color: red;
+}
+/*
+/*class selector 前面放.*/
+/*
+.blueText {
+  color: blue;
+}
+.largeText {
+  font-size: 3rem;
+}
+*/
+
+/*
+h1.blueText {
+  color: blue;
+}
+*/
+
+/*grouping selector*/
+/*
+h1,
 h2 {
-  color: #5743bb;
+  color: orange;
 }
-/* 這是顏色設定 */
-/* 註解註解註解
-註解 */
+*/
+/*descendant selector後裔選擇器*/
+div.link1 a {
+  color: red;
+}
+div.link2 a {
+  color: aqua;
+}
+
+/*attribute selector*/
+input[type="text"] {
+  color: red;
+}
+/*pseudo classes*/
+/*
+textarea:hover {
+  background-color: red;
+}
+*/
+input[type="text"]:hover {
+  color: green;
+}
+input[type="text"]:active {
+  color: blue;
+}
+tr:nth-child(2) {
+  color: blueviolet;
+}
+/*pseudo element*/
+/* p::before {
+  content: ">>";
+  color: red;
+} */
+p::first-letter {
+  font-size: 2.5rem;
+}
+h1::after {
+  content: "*";
+  color: red;
+}
