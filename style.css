@@ -1,1 +1,9 @@
 /*inline styling > id > class > element selector > inheritance*/
+p {
+  text-decoration: underline;
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  color: orange;
+}
