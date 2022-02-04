@@ -1,12 +1,17 @@
-/*inline styling > id > class > element selector > inheritance*/
-p {
-  text-decoration: underline;
-  font-size: 1rem;
-  font-family: "Noto Sans TC", sans-serif;
-  font-weight: 400;
-  text-indent: 32px;
+/*content, padding, margin, border, width, weight*/
+.pic {
+  width: 500px;
 }
-a {
-  text-decoration: none;
-  color: orange;
+a.survey {
+  background-color: cornflowerblue;
+  margin: 150px 20px; /**inline 無法調整上下margin*/
 }
+.survey:hover {
+  background-color: blue;
+}
+div.box1 {
+  width: 50vw;
+  height: 50vh;
+  background-color: blue;
+}
+/*inline-block img, input, button, select, textarea*/

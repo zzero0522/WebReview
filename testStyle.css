@@ -83,3 +83,16 @@ h1::after {
   content: "*";
   color: red;
 }
+
+/*inline styling > id > class > element selector > inheritance*/
+p {
+  text-decoration: underline;
+  font-size: 1rem;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  text-indent: 32px;
+}
+a {
+  text-decoration: none;
+  color: orange;
+}
