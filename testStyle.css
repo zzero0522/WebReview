@@ -96,3 +96,19 @@ a {
   text-decoration: none;
   color: orange;
 }
+
+h1.pic {
+  background-color: brown;
+  color: white;
+  margin: 1rem 2rem;
+  border: 10px solid rgb(76, 59, 230);
+}
+button.example1 {
+  padding: 1rem 3rem 2rem 5rem;
+}
+.example2 {
+  padding: 2rem 4rem;
+}
+.example3 {
+  padding: 5rem;
+}
