@@ -1,7 +1,9 @@
 /*content, padding, margin, border, width, weight*/
 .pic {
   width: 500px;
+  cursor: wait;
 }
+
 a.survey {
   background-color: cornflowerblue;
   margin: 150px 20px; /**inline 無法調整上下margin*/
@@ -9,9 +11,86 @@ a.survey {
 .survey:hover {
   background-color: blue;
 }
-div.box1 {
-  width: 50vw;
-  height: 50vh;
+div.container {
+  width: 500px;
+  height: 500px;
   background-color: blue;
+  border-radius: 10px; /*外框圓滑*/
+  overflow: hidden;
 }
+
+div.box {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 50%;
+  animation-name: cross;
+  animation-duration: 2s;
+  /*animation-delay: 3s;*/
+  position: relative;
+  /*animation-iteration-count: infinite;*/
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; /*沒在動的時候*/
+  /*以上可整合成 animation: name duration timin-function delay iteration-count direction
+  空白就是預設*/
+}
+/*div.box:hover {
+  transform: scale(2, 3) translate(50px, 50px) rotateY(90deg);
+}*/
+
+/*keyframes, animation-name, animation duration*/
+@keyframes cross {
+  from {
+    background-color: aqua;
+    left: 0;
+    top: 0;
+  }
+  to {
+    background-color: rebeccapurple;
+    left: 300px;
+    top: 800px;
+  }
+}
+
 /*inline-block img, input, button, select, textarea*/
+ul {
+  list-style-type: circle;
+}
+ol {
+  list-style-type: lower-alpha;
+}
+/*table styling*/
+table {
+  width: 500px;
+  height: 300px;
+}
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-bottom: 3px solid gray;
+}
+
+th,
+td {
+  padding: 0.5rem 0.75rem;
+}
+
+th {
+  background-color: darkolivegreen;
+  color: white;
+  font-size: 1.5rem;
+}
+
+h1 {
+  /*property name, duration, timing function*/
+  transition: all 1s;
+}
+
+h1:hover {
+  background-color: rgb(90, 88, 88);
+  color: white;
+}
