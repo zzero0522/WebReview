@@ -1,0 +1,25 @@
+div.container {
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  width: 200px; /*flex-wrap預設是nowrap情況下，此為flex寬度極限*/
+  height: 200px;
+}
+
+.box1 {
+  background-color: aqua;
+}
+.box2 {
+  background-color: blue;
+}
+.box3 {
+  background-color: brown;
+}
+.box4 {
+  background-color: darkkhaki;
+}
+.box5 {
+  background-color: darkgreen;
+}
