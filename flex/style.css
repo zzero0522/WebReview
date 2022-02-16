@@ -4,22 +4,32 @@ div.container {
   flex-wrap: wrap;
 }
 .box {
-  width: 200px; /*flex-wrap預設是nowrap情況下，此為flex寬度極限*/
+  /*width: 200px; /*flex-wrap預設是nowrap情況下，此為flex寬度極限*/
   height: 200px;
 }
 
 .box1 {
+  flex-grow: 1; /*flex倍率*/
+  flex-basis: 150px; /*flex最小寬度*/
   background-color: aqua;
 }
 .box2 {
+  flex-grow: 1;
+  flex-basis: 150px;
   background-color: blue;
 }
 .box3 {
+  flex-grow: 1;
+  flex-basis: 150px;
   background-color: brown;
 }
 .box4 {
+  flex-grow: 1;
+  flex-basis: 150px;
   background-color: darkkhaki;
 }
 .box5 {
+  flex-grow: 1;
+  flex-basis: 150px;
   background-color: darkgreen;
 }
