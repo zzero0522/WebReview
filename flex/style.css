@@ -2,34 +2,45 @@ div.container {
   border: 3px solid black;
   display: flex;
   flex-wrap: wrap;
+
+  /*justify-content: center;*/
+  /*flex-start flex-end center*/
+  /*space-between space-around space-enenly*/
 }
 .box {
   /*width: 200px; /*flex-wrap預設是nowrap情況下，此為flex寬度極限*/
+  /*width: 200px;*/
   height: 200px;
+  /*flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;*/
+  /*grow shrink basis*/
+  flex: 1 1 200px;
+  /*height: 100px;*/
 }
 
 .box1 {
-  flex-grow: 1; /*flex倍率*/
-  flex-basis: 150px; /*flex最小寬度*/
+  /*flex-grow: 1; /*flex倍率*/
+  /*flex-basis: 150px; /*flex最小寬度*/
   background-color: aqua;
 }
 .box2 {
-  flex-grow: 1;
-  flex-basis: 150px;
+  /*flex-grow: 1;
+  flex-basis: 150px;*/
   background-color: blue;
 }
 .box3 {
-  flex-grow: 1;
-  flex-basis: 150px;
+  /*flex-grow: 1;
+  flex-basis: 150px;*/
   background-color: brown;
 }
 .box4 {
-  flex-grow: 1;
-  flex-basis: 150px;
+  /*flex-grow: 1;
+  flex-basis: 150px;*/
   background-color: darkkhaki;
 }
 .box5 {
-  flex-grow: 1;
-  flex-basis: 150px;
+  /*flex-grow: 1;
+  flex-basis: 150px;*/
   background-color: darkgreen;
 }
